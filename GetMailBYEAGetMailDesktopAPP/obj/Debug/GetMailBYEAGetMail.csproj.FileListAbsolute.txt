@@ -1,0 +1,16 @@
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\GetMailBYEAGetMailDesktopAPP.exe.config
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\GetMailBYEAGetMailDesktopAPP.exe
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\GetMailBYEAGetMailDesktopAPP.pdb
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\EAGetMail.dll
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\EntityFramework.dll
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\EntityFramework.SqlServer.dll
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\EntityFramework.xml
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\bin\Debug\EntityFramework.SqlServer.xml
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMail.csprojAssemblyReference.cache
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMailDesktopAPP.Form1.resources
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMailDesktopAPP.Properties.Resources.resources
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMail.csproj.GenerateResource.cache
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMail.csproj.CoreCompileInputs.cache
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMail.csproj.CopyComplete
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMailDesktopAPP.exe
+E:\GetMailBYEAGetMail\GetMailBYEAGetMailDesktopAPP\obj\Debug\GetMailBYEAGetMailDesktopAPP.pdb

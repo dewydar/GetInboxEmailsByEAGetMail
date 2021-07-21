@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EAGetMailDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="WebMailAttachments">
+    <Key>
+      <PropertyRef Name="AttachmentsID" />
+    </Key>
+    <Property Name="AttachmentsID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Attachments_Data" Type="varbinary(max)" Nullable="false" />
+    <Property Name="Attachments_MIME" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Attachments_Extension" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="Attachments_FileName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="WebMailInfoMessageID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WebmailMessages">
+    <Key>
+      <PropertyRef Name="WebmailMessagesID" />
+    </Key>
+    <Property Name="WebmailMessagesID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FromEmail" Type="nvarchar" MaxLength="500" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="500" />
+    <Property Name="Body" Type="nvarchar(max)" />
+    <Property Name="FromName" Type="nvarchar" MaxLength="500" />
+    <Property Name="ToEmail" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ReceviedDate" Type="datetime" Nullable="false" />
+    <Property Name="UIDS" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="WebMailSettings">
+    <Key>
+      <PropertyRef Name="WebMailSettingsID" />
+    </Key>
+    <Property Name="WebMailSettingsID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KeyCode" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="KeyValue" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="KeyID" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_WebMailAttachments_WebmailMessages">
+    <End Role="WebmailMessages" Type="Self.WebmailMessages" Multiplicity="1" />
+    <End Role="WebMailAttachments" Type="Self.WebMailAttachments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WebmailMessages">
+        <PropertyRef Name="WebmailMessagesID" />
+      </Principal>
+      <Dependent Role="WebMailAttachments">
+        <PropertyRef Name="WebMailInfoMessageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EAGetMailDBModelStoreContainer">
+    <EntitySet Name="WebMailAttachments" EntityType="Self.WebMailAttachments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WebmailMessages" EntityType="Self.WebmailMessages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WebMailSettings" EntityType="Self.WebMailSettings" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_WebMailAttachments_WebmailMessages" Association="Self.FK_WebMailAttachments_WebmailMessages">
+      <End Role="WebmailMessages" EntitySet="WebmailMessages" />
+      <End Role="WebMailAttachments" EntitySet="WebMailAttachments" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

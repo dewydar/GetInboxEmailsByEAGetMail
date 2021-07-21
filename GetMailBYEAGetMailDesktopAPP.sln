@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetMailBYEAGetMail", "GetMailBYEAGetMailDesktopAPP\GetMailBYEAGetMail.csproj", "{4FB4F4A9-4F5D-456E-95DA-116B1BB4F24A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB4F4A9-4F5D-456E-95DA-116B1BB4F24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB4F4A9-4F5D-456E-95DA-116B1BB4F24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB4F4A9-4F5D-456E-95DA-116B1BB4F24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB4F4A9-4F5D-456E-95DA-116B1BB4F24A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC2EA7E4-CA36-4C5F-80A4-5227D19417EC}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EAGetMailDBModelStoreContainer" CdmEntityContainer="GetMailEntities">
+    <EntitySetMapping Name="WebMailAttachments">
+      <EntityTypeMapping TypeName="EAGetMailDBModel.WebMailAttachments">
+        <MappingFragment StoreEntitySet="WebMailAttachments">
+          <ScalarProperty Name="AttachmentsID" ColumnName="AttachmentsID" />
+          <ScalarProperty Name="Attachments_Data" ColumnName="Attachments_Data" />
+          <ScalarProperty Name="Attachments_MIME" ColumnName="Attachments_MIME" />
+          <ScalarProperty Name="Attachments_Extension" ColumnName="Attachments_Extension" />
+          <ScalarProperty Name="Attachments_FileName" ColumnName="Attachments_FileName" />
+          <ScalarProperty Name="WebMailInfoMessageID" ColumnName="WebMailInfoMessageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebmailMessages">
+      <EntityTypeMapping TypeName="EAGetMailDBModel.WebmailMessages">
+        <MappingFragment StoreEntitySet="WebmailMessages">
+          <ScalarProperty Name="WebmailMessagesID" ColumnName="WebmailMessagesID" />
+          <ScalarProperty Name="FromEmail" ColumnName="FromEmail" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="ToEmail" ColumnName="ToEmail" />
+          <ScalarProperty Name="ReceviedDate" ColumnName="ReceviedDate" />
+          <ScalarProperty Name="UIDS" ColumnName="UIDS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebMailSettings">
+      <EntityTypeMapping TypeName="EAGetMailDBModel.WebMailSettings">
+        <MappingFragment StoreEntitySet="WebMailSettings">
+          <ScalarProperty Name="WebMailSettingsID" ColumnName="WebMailSettingsID" />
+          <ScalarProperty Name="KeyCode" ColumnName="KeyCode" />
+          <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+          <ScalarProperty Name="KeyID" ColumnName="KeyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
